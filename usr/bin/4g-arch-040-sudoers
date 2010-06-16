@@ -1,0 +1,15 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+
+open ( my $out, '>>', '/etc/sudoers' );
+print $out <<"END";
+# Defaults specification
+Defaults:troy timestamp_timeout=-1
+Defaults:marv timestamp_timeout=-1
+# User privilege specification
+root	ALL=(ALL) ALL
+troy	ALL=(ALL) ALL
+marv	ALL=(ALL) ALL
+END
+
