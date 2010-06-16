@@ -3,5 +3,9 @@ use warnings;
 use strict;
 
 print "copy key\n";
-system("git://github.com/troywill/eee-4g-arch.git");
+chdir '/tmp';
+system('git clone git://github.com/troywill/eee-4g-arch.git');
+
+
+
 
