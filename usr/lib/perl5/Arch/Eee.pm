@@ -1,4 +1,4 @@
-package Eee::Arch;  # must live in Some/Module.pm
+package Arch::Eee;  # must live in Some/Module.pm
 
 use strict;
 
