@@ -1,0 +1,12 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+
+&run_command ( 'ssh-keygen' );
+&run_command ( '/usr/sbin/sshd' );
+
+sub run_command {
+    my $command = shift;
+    print "=> $command\n";
+    system $command;
+}
