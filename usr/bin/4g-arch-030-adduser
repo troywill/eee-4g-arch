@@ -3,6 +3,7 @@ use warnings;
 use strict;
 
 &run_command ( 'useradd --group users --groups audio,network,optical,storage,video --create-home marv');
+&run_command ( 'password marv');
 
 sub run_command {
     my $command = shift;
