@@ -1,4 +1,8 @@
-#!/bin/bash
+#!/bin/env perl
+use warnings;
+use strict;
+
+
 pacman --sync --refresh
 pacman --sync openssh
 pacman --sync git
