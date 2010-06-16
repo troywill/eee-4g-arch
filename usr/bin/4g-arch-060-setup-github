@@ -3,3 +3,5 @@ use warnings;
 use strict;
 
 print "copy key\n";
+system("git://github.com/troywill/eee-4g-arch.git");
+
