@@ -2,7 +2,7 @@
 use warnings;
 use strict;
 
-&run_command ( 'ssh-keygen' );
+&run_command ( 'ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key' );
 &run_command ( '/usr/sbin/sshd' );
 
 sub run_command {
