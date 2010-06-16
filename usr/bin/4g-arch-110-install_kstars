@@ -2,7 +2,7 @@
 use warnings;
 use strict;
 
-&run_command ('pacman --sync kstars');
+&run_command ('pacman --sync kdeedu-kstars');
 
 sub run_command {
     my $command = shift;
