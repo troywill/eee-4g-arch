@@ -1,0 +1,11 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+
+&run_command ( 'useradd --group users --groups audio,network,optical,storage,video --create-home marv');
+
+sub run_command {
+    my $command = shift;
+    print "=> $command\n";
+    system $command;
+}
