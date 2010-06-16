@@ -8,7 +8,6 @@ use strict;
 &run_command ('pacman --sync xf86-video-intel');
 &run_command ('pacman --sync xf86-input-synaptics');
 &run_command ('pacman --sync xf86-input-synaptics');
-&run_command ('pacman --sync pacman -S hal dbus xf86-input-evdev');
 
 sub run_command {
     my $command = shift;
