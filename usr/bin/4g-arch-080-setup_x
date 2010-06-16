@@ -4,6 +4,7 @@ use strict;
 
 &run_command ('sleep 30 && killall Xorg &');
 &run_command ('Xorg -configure &');
+&run_command ('startx &');
 
 sub run_command {
     my $command = shift;
