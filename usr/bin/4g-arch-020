@@ -2,7 +2,7 @@
 use warnings;
 use strict;
 
-&run_command 'git clone git@github.com:troywill/eee-4g-arch.git';
+&run_command ('git clone git@github.com:troywill/eee-4g-arch.git');
 
 sub run_command {
     my $command = shift;
