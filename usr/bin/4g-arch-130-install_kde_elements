@@ -1,9 +1,10 @@
-#!/usr/bin/env perl
+n#!/usr/bin/env perl
 use warnings;
 use strict;
 
 &run_command ( 'pacman --sync --refresh' );
-&run_command ( 'pacman --sync openssh kdebase-konsole');
+&run_command ( 'pacman --sync kdebase-konsole');
+&run_command ( 'pacman --sync kdebase-plasma');
 
 # extra/kdeplasma-addons-applets-konsoleprofiles 4.6.0-2 (kde kdeplasma-addons)
 # extra/kdeplasma-addons-runners-konsolesessions 4.6.0-2 (kde kdeplasma-addons)
@@ -14,3 +15,4 @@ sub run_command {
     print "=> $command\n";
     system $command;
 }
+    Display the contents of folders (User´s home folder as default)
