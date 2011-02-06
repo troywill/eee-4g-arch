@@ -1,0 +1,16 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+
+&run_command ( 'pacman --sync --refresh' );
+&run_command ( 'pacman --sync openssh kdebase-konsole');
+
+# extra/kdeplasma-addons-applets-konsoleprofiles 4.6.0-2 (kde kdeplasma-addons)
+# extra/kdeplasma-addons-runners-konsolesessions 4.6.0-2 (kde kdeplasma-addons)
+#    A KDE konsole application with the look and feel of that in the Quake engine
+
+sub run_command {
+    my $command = shift;
+    print "=> $command\n";
+    system $command;
+}
