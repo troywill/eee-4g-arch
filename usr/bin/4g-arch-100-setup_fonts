@@ -2,7 +2,8 @@
 use warnings;
 use strict;
 
-&run_command ('pacman --sync ttf-ms-fonts ttf-dejavu ttf-bitstream-vera');
+&run_command ('pacman --sync ttf-dejavu');
+&run_command ('pacman --sync ttf-bitstream-vera');
 
 sub run_command {
     my $command = shift;

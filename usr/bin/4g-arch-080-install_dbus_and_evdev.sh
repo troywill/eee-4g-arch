@@ -2,7 +2,8 @@
 use warnings;
 use strict;
 
-&run_command ('pacman --sync hal dbus xf86-input-evdev');
+&run_command ('pacman --sync dbus');
+&run_command ('pacman --sync xf86-input-evdev');
 
 sub run_command {
     my $command = shift;

@@ -7,7 +7,6 @@ use strict;
 &run_command ('pacman --sync mesa');
 &run_command ('pacman --sync xf86-video-intel');
 &run_command ('pacman --sync xf86-input-synaptics');
-&run_command ('pacman --sync xf86-input-synaptics');
 
 sub run_command {
     my $command = shift;
