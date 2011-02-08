@@ -6,6 +6,7 @@ use strict;
 
 open ( my $out, '>>', '/etc/sudoers' );
 print $out <<"END";
+### Following lines added by 4g-arch-040-sudoers
 # Defaults specification
 Defaults:troy timestamp_timeout=-1
 # User privilege specification
