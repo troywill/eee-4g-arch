@@ -3,6 +3,7 @@ use warnings;
 use strict;
 
 my $command = 'pacman --sync iproute2';
+&run_command($command);
 
 sub run_command {
     my $command = shift;
