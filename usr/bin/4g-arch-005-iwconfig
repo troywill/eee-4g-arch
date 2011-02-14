@@ -2,8 +2,9 @@
 use warnings;
 use strict;
 
-my $command = 'pacman --sync iproute2';
-&run_command($command);
+
+&run_command('pacman --sync iproute2');
+&run_command('pacman --sync iwconfig');
 
 sub run_command {
     my $command = shift;
