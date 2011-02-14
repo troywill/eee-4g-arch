@@ -8,5 +8,6 @@ use strict;
 
 sub run_command {
     my $command = shift;
-    print "=> $command\n" && system("$command");
+    print "=> $command\n";
+    system("$command");
 }
