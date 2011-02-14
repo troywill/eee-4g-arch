@@ -1,0 +1,10 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+
+my $command = 'pacman --sync iproute2';
+
+sub run_command {
+    my $command = shift;
+    print "=> $command\n" && system("$command");
+}
