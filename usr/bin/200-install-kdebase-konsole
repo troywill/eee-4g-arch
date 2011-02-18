@@ -2,8 +2,8 @@
 use warnings;
 use strict;
 
-&run_command ('pacman --sync kdebase-workspace');
-&run_command ('pacman --sync kde');
+&run_command ( 'pacman --sync --refresh' );
+&run_command ( 'pacman --sync kdebase-konsole');
 
 sub run_command {
     my $command = shift;
