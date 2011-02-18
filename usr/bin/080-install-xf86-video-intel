@@ -1,0 +1,11 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+
+&run_command ('pacman --sync xf86-video-intel');
+
+sub run_command {
+    my $command = shift;
+    print "=> $command\n";
+    system $command;
+}

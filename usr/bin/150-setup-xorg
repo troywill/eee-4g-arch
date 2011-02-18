@@ -2,8 +2,11 @@
 use warnings;
 use strict;
 
-&run_command ('pacman --sync dbus');
-&run_command ('pacman --sync xf86-input-evdev');
+my $SLEEP=16;
+
+&run_command ("sleep ${SLEEP} && killall X &");
+&run_command ('Xorg -configure &');
+&run_command ('startx &');
 
 sub run_command {
     my $command = shift;

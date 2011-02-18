@@ -1,0 +1,13 @@
+#!/usr/bin/env perl
+use warnings;
+use strict;
+
+
+&run_command('pacman --sync iproute2');
+&run_command('pacman --sync wireless_tools');
+
+sub run_command {
+    my $command = shift;
+    print "=> $command\n";
+    system("$command");
+}

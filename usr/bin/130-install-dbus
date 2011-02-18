@@ -2,9 +2,10 @@
 use warnings;
 use strict;
 
-&run_command ('sleep 30 && killall Xorg &');
-&run_command ('Xorg -configure &');
-&run_command ('startx &');
+my $EDITOR='emacs';
+
+&run_command ('pacman --sync dbus');
+&run_command ("${EDITOR} /etc/rc.conf");
 
 sub run_command {
     my $command = shift;

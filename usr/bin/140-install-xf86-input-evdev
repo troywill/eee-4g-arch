@@ -2,8 +2,7 @@
 use warnings;
 use strict;
 
-&run_command ('pacman --sync ttf-dejavu');
-&run_command ('pacman --sync ttf-bitstream-vera');
+&run_command ('pacman --sync xf86-input-evdev');
 
 sub run_command {
     my $command = shift;

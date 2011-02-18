@@ -4,7 +4,7 @@ use strict;
 
 my $user = 'troy';
 
-&run_command ( "useradd --group users --groups audio,network,optical,storage,video --create-home ${user}");
+&run_command ( "useradd --group users --groups audio,network,optical,storage,video,http --create-home ${user}");
 &run_command ( "passwd ${user}");
 
 sub run_command {

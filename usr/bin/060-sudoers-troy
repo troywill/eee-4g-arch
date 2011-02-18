@@ -9,6 +9,7 @@ print $out <<"END";
 ### Following lines added by 4g-arch-040-sudoers
 # Defaults specification
 Defaults:troy timestamp_timeout=-1
+Defaults:!tty_tickets
 # User privilege specification
 root	ALL=(ALL) ALL
 troy	ALL=(ALL) ALL
