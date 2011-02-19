@@ -1,0 +1,4 @@
+#!/bin/bash
+pacman --sync youtube-dl
+
+
