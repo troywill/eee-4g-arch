@@ -1,0 +1,2 @@
+#!/bin/bash
+cpanp i Catalyst::Runtime
