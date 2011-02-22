@@ -1,0 +1,7 @@
+#!/bin/bash
+set -o errexit
+pacman --sync ttf-hannom
+
+exit
+ttf-hannom
+    Chinese and Vietnamese TrueType font
